@@ -1,0 +1,56 @@
+.weather {
+  text-align: center;
+  
+  h2 {
+    font-size: 5em;
+    margin-bottom: 0px;
+  }  
+  
+  span {
+    font-size: 2em;
+    text-transform: capitalize;
+  }
+  
+  .icon{
+    font-size: 1em;
+  }
+}
+
+.clock {
+  text-align: center;
+  padding-right: 10px;
+
+  i {
+    font-size: 1.5em;
+  }  
+}
+
+.loader {
+  height: 350px;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  div {
+    text-align: center;
+    width: 50%;
+    
+    i {
+      font-size: 2em;
+    }    
+  }  
+}
+
+.additional-info {
+    text-align: left;
+    margin-left: 5%;
+    
+    ul li {
+        float: left;
+        list-style: none;
+        margin-left: 4%;
+        font-size: 1.3em;
+    }    
+}

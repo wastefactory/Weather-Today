@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="container-item">
+        <div ng-show="vm.city.name">
+            <div class="pull-left">
+                <h4>{{vm.city.name}}, {{vm.city.sys.country}}</h4>
+                <span>{{vm.date | date:'EEEE'}}</span>
+            </div>
+            <div class="pull-right clock">
+                <!-- <i class="fa fa-clock-o"></i> -->
+                <p>{{vm.date | date:'HH:mm'}}</p>
+            </div>
+            <div style="clear:both"></div>
+            <div class="weather">
+                <h2>
+                    <i class="icon wi {{vm.city.weather[0].flat_icon}}"></i>
+                    <div>{{vm.city.main.temp | number:0}}&deg;C</div>
+                </h2>
+                <span>{{vm.city.weather[0].description}}</span>
+            </div>
+          <div class="additional-info">
+            <ul>
+              <li>Humidity : {{vm.city.main.humidity}}%</li>
+              <li>Wind : {{vm.city.wind.speed}} km/p</li>
+            </ul>
+          </div>
+        </div>
+        <div class="loader" ng-hide="vm.city.name">
+            <div><i class="fa fa-spinner fa-spin"></i></div>
+        </div>
+    </div>
+</div>

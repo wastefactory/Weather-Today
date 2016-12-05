@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+$brand-color: #62c1f2;
+
+body{
+    margin: 0;
+    padding: 0;
+    color: $brand-color !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.container {
+  width: 400px;
+  padding: 10px;
+  height: 350px;
+}
