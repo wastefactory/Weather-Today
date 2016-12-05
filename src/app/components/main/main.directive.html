@@ -6,7 +6,7 @@
                 <span>{{vm.date | date:'EEEE'}}</span>
             </div>
             <div class="pull-right clock">
-                <!-- <i class="fa fa-clock-o"></i> -->
+                <i class="wi wi-time-9"></i>
                 <p>{{vm.date | date:'HH:mm'}}</p>
             </div>
             <div style="clear:both"></div>
@@ -25,7 +25,11 @@
           </div>
         </div>
         <div class="loader" ng-hide="vm.city.name">
-            <div><i class="fa fa-spinner fa-spin"></i></div>
+          <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+          </div>
         </div>
     </div>
 </div>

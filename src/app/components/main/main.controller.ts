@@ -33,7 +33,7 @@ export class MainController {
             this.message = "Geolocation is not supported by this browser.";
         }
 	}
-    
+
     getLocation(position): void{
         this.postData.latitude = position.coords.latitude;
         this.postData.longitude = position.coords.longitude;
@@ -42,16 +42,16 @@ export class MainController {
             return city;
         }).then((city)=>{
             this.postData.city = city;
-            
+
             return this.MainService.getWeather(this.postData).then(function (response) {
                 return response;
-            });      
-                  
+            });
+
         }).then((data) =>{
             data.weather[0].flat_icon = this.MainService.generateIcon( this.date.getHours(), data.weather[0].main );
             return data;
         }).then((data)=>{
             this.city = data;
         });
-    }    
+    }
 }

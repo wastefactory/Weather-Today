@@ -13,4 +13,3 @@ angular
     .config(Config)
     .config(Router)
     .run(Run);
-

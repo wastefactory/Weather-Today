@@ -1,27 +1,27 @@
-export class MainService { 
-    
+export class MainService {
+
     static $inject = ['DataService'];
 
     constructor (
         private DataService: any
-    ){}    
+    ){}
 
     public getCity(postData): any {
         return this.DataService.getCity(postData).then(function (response) {
             return response.results[0].address_components[3].long_name;
         });
     }
-    
+
     public getWeather(postData): any {
         return this.DataService.getWeather(postData).then(function (response) {
             return response;
         });
-    }   
-    
+    }
+
     public generateIcon(time, weather): any {
         let icon;
-        let timeOfDay = (time > 6 && time < 20) ? 'dayTime' : 'nightTime';
-    
+        let timeOfDay = (time > 6 && time < 18) ? 'dayTime' : 'nightTime';
+
         if(timeOfDay == 'dayTime'){
           switch ( weather ) {
               case 'Clear':
@@ -95,7 +95,7 @@ export class MainService {
                   break;
           }
         }
-    
+
         return icon;
-    }        
+    }
 }
