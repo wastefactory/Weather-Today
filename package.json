@@ -1,6 +1,6 @@
 {
   "name": "weathertoday",
-  "version": "1.0.2",
+  "version": "1.2.1",
   "description": "The most easy to use weather extension and displays the current weather based on your location.",
   "main": "index.js",
   "scripts": {

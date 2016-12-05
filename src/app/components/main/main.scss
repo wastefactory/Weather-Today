@@ -1,48 +1,5 @@
 $brand-color: #62c1f2;
 
-.today {
-  background-color: $brand-color;
-  color: white;
-  padding: 10px;
-
-  ul {
-    padding: 0px;
-
-    li {
-      list-style: none;
-    }
-  }
-
-  h3 {
-    margin-bottom: 25px;
-  }
-
-  .wind {
-    font-size: 1em;
-    margin-top: 10px;
-  }
-
-  .icon {
-    font-size: 6em;
-    margin-top: 100px;
-    margin-left: -40px;
-  }
-
-  .temp {
-    font-size: 3em;
-    margin-top: 20px;
-  }
-
-  .description {
-    text-transform: capitalize;
-    font-size: 1.2em;
-  }
-}
-
-.forecast {
-  height: 100px;
-}
-
 .weather {
   text-align: center;
   margin-top: -10px;
