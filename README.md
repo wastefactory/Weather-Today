@@ -75,3 +75,5 @@ To pack the project for production, you need to run:
 ```
 > npm test
 ```
+
+`Demo:` https://chrome.google.com/webstore/detail/weather-today/pihbggehfalkfjellilhdlhmicfijkfh
