@@ -5,10 +5,10 @@ The most easy to use weather extension and displays the current weather based on
 
 The following npm packages will need to be installed globally:
 
-typescript
-typings
-webpack
-phantomjs
+1. typescript
+2. typings
+3. webpack
+4. phantomjs
 
 Global modules can be installed as follows:
 
@@ -54,14 +54,14 @@ To install the type definition files run the command:
 ```
 
 ### Dev Environment 
-/src directory : will be the development source.
-/dist directory : will be the extension package.
+1. `/src` directory : will be the development source.
+2. `/dist` directory : will be the extension package.
 
 ```
 > npm run build
 ```
 
-Running 'npm run build' will transpile and build all the source files into bundle.js and vendor.bundle.js and will be available in /dist/app directory.
+Running `npm run build` will transpile and build all the source files into bundle.js and vendor.bundle.js and will be available in `/dist/app` directory.
 
 ### Production Build
 To pack the project for production, you need to run:
